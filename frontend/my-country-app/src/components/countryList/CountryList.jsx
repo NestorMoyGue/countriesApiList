@@ -15,7 +15,7 @@ const CountryList = () => {
         setCountries(response.data.countries);
       })
       .catch((error) => {
-        console.error('Error al obtener la lista de países:', error.message);
+        console.error('Error at obtain list of countries', error.message);
       });
   }, []);
 

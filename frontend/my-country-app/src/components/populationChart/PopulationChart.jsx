@@ -27,7 +27,7 @@ const PopulationChart = () => {
       })
       .catch((error) => {
         setCharging(false); 
-        console.error('Error al obtener la información del país:', error.message);
+        console.error('Error at obtain country info:', error.message);
       });
   }, [countryCode, countryName]); 
 

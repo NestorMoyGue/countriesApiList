@@ -49,7 +49,7 @@ app.get('/api/country/:countryCode', async (req, res) => {
     } catch (error) {
       res.status(500).json({
         success: false,
-        message: 'Error to obtein info about country',
+        message: 'Error at obtain info about country',
         error: error.message
       });
     }
@@ -67,7 +67,7 @@ app.get('/api/countries', async (req, res) => {
     console.error(error.message);
     res.status(500).json({
       success: false,
-      message: 'Error to obtain list of countries'
+      message: 'Error at obtain list of countries'
     });
   }
 });
