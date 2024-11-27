@@ -21,7 +21,7 @@ const CountryList = () => {
 
   return (
     <div className="container">
-      <h1 className="heading">Lista de Países</h1>
+      <h1 className="heading">List of countries</h1>
       <ul className="countryList">
         {countries.map((country) => (
           <li key={country.countryCode} className="countryItem">

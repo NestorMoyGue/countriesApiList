@@ -45,7 +45,7 @@ const PopulationChart = () => {
       </Link>
 
       <div id="title">
-        <h1>Información de {countryName}</h1>
+        <h1>Information of {countryName}</h1>
         <img
           src={countryData.countryFlag}
           alt={`Bandera de ${countryName}`}
@@ -53,7 +53,7 @@ const PopulationChart = () => {
         />
       </div>
 
-      <h2>Fronteras</h2>
+      <h2>Borders countries</h2>
       <ul>
         {countryData.borders.map((border) => (
           <li key={border} className="border">
@@ -62,7 +62,7 @@ const PopulationChart = () => {
         ))}
       </ul>
 
-      <h2>Población Histórica</h2>
+      <h2>Historic Population</h2>
       <ul class='population'>
         {countryData.dataPopulation.map((population) => (
           <li key={population.year}>
